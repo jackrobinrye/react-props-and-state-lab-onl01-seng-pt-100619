@@ -64,7 +64,7 @@ class App extends React.Component {
             <div className="twelve wide column">
               <PetBrowser  onAdoptPet={(petId) => { 
                 // vvvv
-                this.state.pets.filter(id === petId)
+                this.state.pets.filter(id === petId)[0]
               }}/>
             </div>
           </div>
